@@ -1,5 +1,5 @@
 name: flutter_ecommerce
-description: "A new Flutter project."
+description: "An E-Commerce App built with Flutter"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -87,3 +87,14 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+#-------------------------Importar Fuentes--------------------------------#
+  fonts:
+    - family: RobotoMono
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+#-------------------------Importar Imagenes--------------------------------#
+  assets:
+    - assets/images/
