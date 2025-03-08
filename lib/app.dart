@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerce/design/themes.dart';
+import 'package:flutter_ecommerce/pages/home_page.dart';
 
 class AppEcommerce extends StatelessWidget {
   const AppEcommerce({super.key});
@@ -8,11 +10,8 @@ class AppEcommerce extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Ecommerce App',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: Scaffold(
-        appBar: AppBar(title: Text('Ecommerce App')),
-        body: const Center(child: Text('Ecommerce App')),
-      ),
+      theme: AppThemes.defaultTheme,
+      home: const HomePage(key: Key('home_page')),
     );
   }
 }
